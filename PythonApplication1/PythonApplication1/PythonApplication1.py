@@ -3,5 +3,5 @@
 #print(7)
 #print(input())
 
-x_a = 8
-print(x_a)
+x = 8
+print(x)
