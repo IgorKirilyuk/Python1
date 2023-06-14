@@ -1,7 +1,20 @@
-#print('hello world!','abcd', sep='-')
-#print()
-#print(7)
-#print(input())
+#task_1
+print('input type pet:')
+a = input()
+print('input name pet:')
+b = input()
+print('input age pet:')
+c = input()
+print('This ', a, ', his name: "', b, '", his age: ', c ,sep='')
 
-x = 8
-print(x)
+#task_2 
+print ('"anthropogenesis":')
+print('input humen 2-3 million years ago?')
+a = input()
+print('input humen 750 000 years ago?')
+b = input()
+print('input humen 100 000 - 400 000 years ago?')
+c = input()
+print('input humen less 400 000 years ago?')
+d = input()
+print(a,b,c,d,sep='=>')
