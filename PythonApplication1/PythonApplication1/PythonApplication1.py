@@ -1,4 +1,4 @@
-#task_1
+##task 3_1
 print('input type pet:')
 a = input()
 print('input name pet:')
@@ -7,7 +7,7 @@ print('input age pet:')
 c = input()
 print('This ', a, ', his name: "', b, '", his age: ', c ,sep='')
 
-#task_2 
+##task 3_2 
 print ('"anthropogenesis":')
 print('input humen 2-3 million years ago?')
 a = input()
