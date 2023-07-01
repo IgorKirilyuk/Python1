@@ -4,8 +4,8 @@ n=0
 while n<1 or n>10000:
     n=int(input())
 for i in range(n):
-    a=0
-    while (a<-10e5 or a>10e5 or a==0) :
+    a=10000000000000000000000
+    while (a<-10e5 or a>10e5 ) :
         a=int(input())
     l.append(a)
 l.reverse()
