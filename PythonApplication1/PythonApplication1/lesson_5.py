@@ -14,9 +14,9 @@ else: print('nechetnoe chislo')
 ##Task 5_2
 i = str(input())
 ni_ = len(i)
-g_ = 'aei'
+g_ = 'eyioau'
 ng_ = len(g_)
-s_ = 'tpn'
+s_ = 'qwrtpsdfghjklzxcvbnm'
 ns_ = len(s_)
 gs_ = 0
 ss_ = 0
