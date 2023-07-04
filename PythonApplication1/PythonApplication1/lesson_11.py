@@ -3,7 +3,7 @@
 ##Task 11_1
 def gf_ (a):
         n=1
-        for i in range(1,b+1):
+        for i in range(1,a+1):
             n*=i
         return(n)
 
@@ -11,8 +11,9 @@ a=0
 f_=[]
 while a<1:
     a=int(input('vvedite zzelo chislo: '))
+a=gf_(a)
 for b in range(a,0,-1):
-    f_.append(gf_(a))
+    f_.append(gf_(b))
 print(f_)
 
 
