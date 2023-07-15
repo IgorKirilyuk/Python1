@@ -12,10 +12,13 @@ class Helicopter:
         self.maxtank = 1
         self.tank = 0
         self.score = 0
+        self.lives = 20
+        self.maxlives = 20
 
     def print_stats(self):
         print('🍺:', self.tank, '/', self.maxtank, sep='', end=' | ')
-        print('🏆:' , self.score, sep='')
+        print('🏆:' , self.score, sep='', end=' | ')
+        print('❤️:', self.lives, sep='')
     def move(self, dx, dy):
         nx, ny = self.x + dx, self.y + dy
         if 0 <= nx < self.h and 0 <= ny < self.w:
