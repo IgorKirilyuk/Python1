@@ -16,6 +16,7 @@ TREE_BONUS = 100
 HELICO_MAX_TUNK = 3
 HELICO_TUNK_PRICE = 500
 HELICO_LIVE_PRICE = 500
+TREE_DEBONUS = 50
 
 
 class Map:
@@ -96,12 +97,13 @@ class Map:
             self.cells[fx][fy] = 5
         return self.cells[fx][fy] == 5
 
-    def update_fires(self):
+    def update_fires(self, helico):
         for ri in range(self.h):
             for ci in range(self.w):
                 cell = self.cells[ri][ci]
                 if cell == 5:
                     self.cells[ri][ci] = 0
+                    helico.score -= TREE_DEBONUS
         for i in range(5):
             self.add_fire()
 
@@ -126,3 +128,9 @@ class Map:
                 os.system('cls')
                 print("GAME OVER, YOU SCORE:", helico.score)
                 exit(0)
+
+    def export_data(self):
+        return {"cells":self.cells}
+
+    def import_data(self, data):
+        self.cells = data["cells"] or [[0 for i in range(self.w)] for j in range(self.h)]
